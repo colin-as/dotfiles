@@ -1,0 +1,11 @@
+2024-08-19 17:04:00,708 DEBUG    root            Loaded Command Group: ['gcloud', 'info']
+2024-08-19 17:04:00,708 DEBUG    root            Running [gcloud.info] with arguments: [--format: "value(installation.sdk_root)"]
+2024-08-19 17:04:00,730 DEBUG    root            Chosen display Format:value(installation.sdk_root)
+2024-08-19 17:04:00,730 INFO     root            Display format: "value(installation.sdk_root)"
+2024-08-19 17:04:00,738 INFO     ___FILE_ONLY___ /Users/colin/Downloads/google-cloud-sdk 2
+
+2024-08-19 17:04:00,738 DEBUG    root            Checking for updates...
+2024-08-19 17:04:00,757 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-08-19 17:04:00,901 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 223380
+2024-08-19 17:04:00,968 DEBUG    root            Updating notification cache...
+2024-08-19 17:04:00,976 DEBUG    root            Metrics reporting process started...

@@ -85,6 +85,7 @@ $cmd_duration\
 """
 
 add_newline = true
+command_timeout = 3600000
 
 [character]
 format = "$symbol "
@@ -108,12 +109,12 @@ format = "[$user]($style) ▻ "
 disabled = false
 
 [directory]
-home_symbol = "⌂"
+home_symbol = "~"
 truncation_length = 2
-truncation_symbol = "▦ "
+truncation_symbol = ".../"
 read_only = " ■"
 style = "italic blue"
-format = ' [$path]($style)[$read_only]($read_only_style)'
+format = ' [$path]($style)[$read_only]($read_only_style) '
 
 [cmd_duration]
 min_time = 500
@@ -181,7 +182,7 @@ style = "italic bright-yellow"
 
 [nodejs]
 symbol = " "
-format = " ${symbol} [◫ ($version)](italic bright-green)"
+format = " ${symbol} [($version)](italic bright-green)"
 detect_files = ["package-lock.json", "yarn.lock"]
 version_format = "${major}.${minor}"
 
@@ -279,3 +280,6 @@ format = " nix [$symbol$state $name]($style)"
 [spack]
 symbol = "◇ "
 format = " spack [$symbol$environment]($style)"
+
+command_timeout = 1000
+
